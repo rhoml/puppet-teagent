@@ -9,4 +9,4 @@ project_page 'https://github.com/thousandeyes/puppet-teagent'
 
 dependency 'puppetlabs/stdlib', '>= 2.2.1'
 dependency 'richardc/datacat', '>= 0.6.1'
-dependency 'puppetlabs/apt', '>=1.6.0'
+dependency 'puppetlabs/apt', '>=1.7.0'
