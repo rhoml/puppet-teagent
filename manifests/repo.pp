@@ -74,7 +74,7 @@ class teagent::repo(
       }
     }
     default: {
-      fail ('not-available')
+      fail ('OS not supported.')
     }
   }
 }
