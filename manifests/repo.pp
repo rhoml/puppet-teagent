@@ -32,6 +32,7 @@ class teagent::repo(
         'thousandeyes':
           location    => 'http://apt.thousandeyes.com',
           repos       => 'main',
+          key         => 'BE718900',
           key_content => '/etc/apt/trusted.gpg.d/thousandeyes-apt-key.pub',
           require     => File['/etc/apt/trusted.gpg.d/thousandeyes-apt-key.pub'],
       }
