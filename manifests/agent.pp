@@ -6,6 +6,7 @@ class teagent::agent {
   }
 
   anchor { 'teagent::agent::begin': } ->
+  class { '::teagent::repo': } ->
   class { '::teagent::dependencies': } ->
   class { '::teagent::agent::config': } ~>
   class { '::teagent::agent::service': } ->

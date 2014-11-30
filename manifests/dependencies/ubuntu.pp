@@ -5,8 +5,6 @@ class teagent::dependencies::ubuntu {
     fail("Use of private class ${name} by ${caller_module_name}")
   }
 
-  include teagent::repo
-
   case $::lsbmajdistrelease {
     '6','12','13','14': {
       if ! defined(Package['te-agent']) {

@@ -5,8 +5,6 @@ class teagent::dependencies::centos {
     fail("Use of private class ${name} by ${caller_module_name}")
   }
 
-  include teagent::repo
-
   if $::operatingsystemrelease < 6.3 {
     if ! defined(Package['te-agent']) {
       package {
