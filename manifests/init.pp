@@ -57,7 +57,7 @@
 #
 # Copyright © 2013 ThousandEyes, Inc.
 class teagent (
-  $account_token       = 'sdfdsfdsf',
+  $account_token       = 'your_enterprise_token_here',
   $agent_utils         = false,
   $bind_addr           = $::ipaddress,
   $browserbot          = false,
